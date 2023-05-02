@@ -1,7 +1,7 @@
 ---
 layout: default
 title: alien math
-parent: irisCTF2023
+parent: irisCTF 2023
 nav_order: 4
 ---
 

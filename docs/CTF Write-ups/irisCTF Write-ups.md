@@ -1,6 +1,6 @@
 ---
 layout: default
-title: irisCTF2023
+title: irisCTF 2023
 nav_order: 1
 has_children: true
 permalink: docs/ctf-write-ups/irisCTF2023
