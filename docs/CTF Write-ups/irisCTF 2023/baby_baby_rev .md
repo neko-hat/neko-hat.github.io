@@ -6,7 +6,7 @@ nav_order: 1
 ---
 
 # baby_baby_rev
-
+{: no_toc }
 ```c
 int __cdecl main(int argc, const char **argv, const char **envp)
 {
