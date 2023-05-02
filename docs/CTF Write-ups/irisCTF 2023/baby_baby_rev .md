@@ -2,7 +2,7 @@
 layout: default
 title: baby_baby_rev
 parent: irisCTF2023
-nav_order: 3
+nav_order: 1
 ---
 
 # baby_baby_rev

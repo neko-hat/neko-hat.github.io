@@ -2,7 +2,7 @@
 layout: default
 title: meaning of python 1
 parent: irisCTF2023
-nav_order: 3
+nav_order: 2
 ---
 
 # meaning of python 1
