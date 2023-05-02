@@ -4,6 +4,7 @@ title: irisCTF2023
 nav_order: 4
 has_children: true
 permalink: docs/ctf-write-ups/irisCTF2023
+parent: CTF Write-ups
 ---
 
 # irisCTF2023
