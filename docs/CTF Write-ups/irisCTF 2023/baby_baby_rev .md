@@ -1,7 +1,8 @@
 ---
 layout: default
 title: baby_baby_rev
-parent: irisCTF2023
+parent: irisCTF 2023
+grand_parent: CTF Write-ups
 nav_order: 1
 ---
 

@@ -2,6 +2,7 @@
 layout: default
 title: alien math
 parent: irisCTF 2023
+grand_parent: CTF Write-ups
 nav_order: 4
 ---
 
