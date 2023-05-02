@@ -1,3 +1,10 @@
+---
+layout: default
+title: alien math
+parent: irisCTF2023
+nav_order: 3
+---
+
 # alien math
 
 ```c

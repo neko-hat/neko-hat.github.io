@@ -1,3 +1,10 @@
+---
+layout: default
+title: baby_baby_rev
+parent: irisCTF2023
+nav_order: 3
+---
+
 # baby_baby_rev
 
 ```c
