@@ -97,15 +97,15 @@ Assembly에서 중요하게 알아야 할 것은, `함수의 호출 규약과, �
 
 ### x86 Register
 
-![image](https://github.com/neko-hat/The-guide-for-ctf-reversing-beginners/blob/main/CTF%20%EB%A6%AC%EB%B2%84%EC%8B%B1%20%EC%9E%85%EB%AC%B8%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EA%B0%80%EC%9D%B4%EB%93%9C/Untitled.png)
+![image](/assets/images/guide-for-reversing-image/Untitled.png)
 
 **`[Image - x86 Register]`**
 
-![image](https://github.com/neko-hat/The-guide-for-ctf-reversing-beginners/blob/main/CTF%20%EB%A6%AC%EB%B2%84%EC%8B%B1%20%EC%9E%85%EB%AC%B8%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EA%B0%80%EC%9D%B4%EB%93%9C/Untitled%201.png)
+![image](/assets/images/guide-for-reversing-image/Untitled%201.png)
 
 **`[Image - x86 General Register Detail]`**
 
-![image](https://github.com/neko-hat/The-guide-for-ctf-reversing-beginners/blob/main/CTF%20%EB%A6%AC%EB%B2%84%EC%8B%B1%20%EC%9E%85%EB%AC%B8%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EA%B0%80%EC%9D%B4%EB%93%9C/Untitled%202.png)
+![image](/assets/images/guide-for-reversing-image/Untitled%202.png)
 
 **`[Image - x86 Segment Register Detail]`**
 
@@ -281,7 +281,7 @@ nasm -f elf32 HelloWorld_32bit.s && ld -m elf_i386 -o HelloWorld_32bit HelloWorl
 
 gdb 실행 `gdb ./HelloWorld_64bit`
 
-![image](https://github.com/neko-hat/The-guide-for-ctf-reversing-beginners/blob/main/CTF%20%EB%A6%AC%EB%B2%84%EC%8B%B1%20%EC%9E%85%EB%AC%B8%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EA%B0%80%EC%9D%B4%EB%93%9C/HelloPwndbg1.png)
+![image](/assets/images/guide-for-reversing-image/HelloPwndbg1.png)
 
 `disass _start`명령어를 통해, 작성한 _start 프로시저의 디스어셈블 코드를 확인 할 수 있다.
 
@@ -289,27 +289,27 @@ n(next)명령어를 통해, 코드를 한줄 한줄 실행해보자.
 
 `pwndbg> b _start` → break point를 _start 프로시저에 걸어보자.
 
-![image](https://github.com/neko-hat/The-guide-for-ctf-reversing-beginners/blob/main/CTF%20%EB%A6%AC%EB%B2%84%EC%8B%B1%20%EC%9E%85%EB%AC%B8%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EA%B0%80%EC%9D%B4%EB%93%9C/HelloPwndbg2.png)
+![image](/assets/images/guide-for-reversing-image/HelloPwndbg2.png)
 
 이후, r(run)명령어로 프로그램을 실행하면, 해당 프로시저 진입에서 멈추는 것을 확인할 수 있다.
 
-![image](https://github.com/neko-hat/The-guide-for-ctf-reversing-beginners/blob/main/CTF%20%EB%A6%AC%EB%B2%84%EC%8B%B1%20%EC%9E%85%EB%AC%B8%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EA%B0%80%EC%9D%B4%EB%93%9C/HelloPwndbg3.png)
+![image](/assets/images/guide-for-reversing-image/HelloPwndbg3.png)
 
 n명령어로, 단계별 실행결과를 바로바로 확인할 수 있다.
 
-![image](https://github.com/neko-hat/The-guide-for-ctf-reversing-beginners/blob/main/CTF%20%EB%A6%AC%EB%B2%84%EC%8B%B1%20%EC%9E%85%EB%AC%B8%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EA%B0%80%EC%9D%B4%EB%93%9C/HelloPwndbg4.png)
+![image](/assets/images/guide-for-reversing-image/HelloPwndbg4.png)
 
 sys_write까지 실행했을 때, welcome 변수의 위치(주소)와 값을 확인 할 수 있으며, sys_write에 들어가는 인자들의 역할과 값을 확인할수 있다. 
 
-![image](https://github.com/neko-hat/The-guide-for-ctf-reversing-beginners/blob/main/CTF%20%EB%A6%AC%EB%B2%84%EC%8B%B1%20%EC%9E%85%EB%AC%B8%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EA%B0%80%EC%9D%B4%EB%93%9C/HelloPwndbg5.png)
+![image](/assets/images/guide-for-reversing-image/HelloPwndbg5.png)
 
 `x/s <address>`를 통해, 해당 주소에 담긴 값을 문자열로 출력할 수 있다.
 
-![image](https://github.com/neko-hat/The-guide-for-ctf-reversing-beginners/blob/main/CTF%20%EB%A6%AC%EB%B2%84%EC%8B%B1%20%EC%9E%85%EB%AC%B8%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EA%B0%80%EC%9D%B4%EB%93%9C/HelloPwndbg6.png)
+![image](/assets/images/guide-for-reversing-image/HelloPwndbg6.png)
 
 **`[Image - sys_wrtie 실행]`**
 
-![image](https://github.com/neko-hat/The-guide-for-ctf-reversing-beginners/blob/main/CTF%20%EB%A6%AC%EB%B2%84%EC%8B%B1%20%EC%9E%85%EB%AC%B8%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EA%B0%80%EC%9D%B4%EB%93%9C/HelloPwndbg7.png)
+![image](/assets/images/guide-for-reversing-image/HelloPwndbg7.png)
 
 간단한 Hello, World 출력 프로그램을 (64bit 기준) 디버깅을 완료하였다.
 
@@ -342,13 +342,13 @@ cd pwndbg && ./setup.sh
 **`[Code - setup.sh]`**    
 [`setup.sh`](https://github.com/neko-hat/The-guide-for-ctf-reversing-beginners/blob/main/src/setup.sh)
 
-![image](https://github.com/neko-hat/The-guide-for-ctf-reversing-beginners/blob/main/CTF%20%EB%A6%AC%EB%B2%84%EC%8B%B1%20%EC%9E%85%EB%AC%B8%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EA%B0%80%EC%9D%B4%EB%93%9C/HelloPwndbg8.png)
+![image](/assets/images/guide-for-reversing-image/HelloPwndbg8.png)
 
 **`[Image - setup.sh execution]`**
 
 해당 쉘 스크립트를 위처럼 실행하면, 위의 사진처럼 화면이 나오면서 설치가 진행된다.
 
-![image](https://github.com/neko-hat/The-guide-for-ctf-reversing-beginners/blob/main/CTF%20%EB%A6%AC%EB%B2%84%EC%8B%B1%20%EC%9E%85%EB%AC%B8%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EA%B0%80%EC%9D%B4%EB%93%9C/HelloPwndbg9.png)
+![image](/assets/images/guide-for-reversing-image/HelloPwndbg9.png)
 
 이후, `gdb`명령어를 통해, `pwndbg>`가 나오면 설치가 완료된 것이다.
 
