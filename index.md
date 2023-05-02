@@ -6,11 +6,10 @@ description: "neko_hat's Blog"
 permalink: /
 has_children: true
 has_toc: false
----
-
-# 작성된 글
-
 
 ---
 
-{: .warning }
+# Posting
+{: .no_toc }
+
+---
