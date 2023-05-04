@@ -3,8 +3,8 @@ layout: default
 title: Abexcm
 nav_order: 1
 has_children: true
-permalink: docs/ctf-write-ups/Abexcm
-parent: CTF Write-ups
+permalink: docs/Reversing/Abexcm
+parent: Reversing
 ---
 
 # Abexcm
