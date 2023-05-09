@@ -6,6 +6,7 @@ layout: table_wrappers
 
 <html lang="{{ site.lang | default: 'en-US' }}">
 {% include head.html %}
+{% I18n_Headers %}
 <body>
   <a class="skip-to-main" href="#main-content">Skip to main content</a>
   {% include icons/icons.html %}
@@ -22,7 +23,7 @@ layout: table_wrappers
         {% endif %}
 
         {% if page.has_children == true and page.has_toc != false %}
-          {% include components/children_nav.html toc_list=toc_list %}
+          {% include compon ents/children_nav.html toc_list=toc_list %}
         {% endif %}
 
         {% include components/footer.html %}
