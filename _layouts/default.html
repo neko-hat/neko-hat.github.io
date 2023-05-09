@@ -7,6 +7,33 @@ layout: table_wrappers
 <html lang="{{ site.lang | default: 'ko' }}">
 {% include head.html %}
 <body>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        {% if page.layout == "default" %} 
+          {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: "lang" %} 
+          {% if posts.size > 1 %}
+            <div class="lang-options">
+              <em>Read this in a different language:</em>
+              <ul>
+                {% for post in posts %}
+                <li>
+                  <a
+                    href="{{site.base-url}}{{post.url}}"
+                    class="{{post.lang}}"
+                    title="View in {{post.lang}}"
+                  >
+                     {{post.lang}}
+                  </a>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+        {% endif %}
+
   <a class="skip-to-main" href="#main-content">Skip to main content</a>
   {% include icons/icons.html %}
   {% include components/sidebar.html %}
@@ -37,31 +64,6 @@ layout: table_wrappers
   {% if site.mermaid %}
     {% include components/mermaid.html %}
   {% endif %}
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        {% if page.layout == "post" %} 
-          {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: "lang" %} 
-          {% if posts.size > 1 %}
-            <div class="lang-options">
-              <em>Read this in a different language:</em>
-              <ul>
-                {% for post in posts %}
-                <li>
-                  <a
-                    href="{{site.base-url}}{{post.url}}"
-                    class="{{post.lang}}"
-                    title="View in {{post.lang}}"
-                  >
-                     {{post.lang}}
-                  </a>
-                </li>
-                {% endfor %}
-              </ul>
-            </div>
-          {% endif %}
-        {% endif %}
 
 </body>
 </html>
