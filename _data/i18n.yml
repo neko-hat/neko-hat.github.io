@@ -1,6 +1,0 @@
-ko:
-  icon: "&#128522"  // 내가 원하는 이모지 decimal code값
-  label: Korean
-en:
-  icon: "&#128513"
-  label: English
