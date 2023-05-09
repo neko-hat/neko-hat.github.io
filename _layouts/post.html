@@ -18,7 +18,7 @@ layout: default
                     class="{{post.lang}}"
                     title="View in {{post.lang}}"
                   >
-                    {{site.data.i18n[post.lang].icon}}{{site.data.i18n[post.lang].label}}
+                     {{post.lang}}
                   </a>
                 </li>
                 {% endfor %}
@@ -26,5 +26,5 @@ layout: default
             </div>
           {% endif %}
         {% endif %}
-        
+
     {{ content }}
