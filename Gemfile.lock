@@ -46,8 +46,6 @@ GEM
     jekyll-github-metadata (2.16.0)
       jekyll (>= 3.4, < 5.0)
       octokit (>= 4, < 7, != 4.4.0)
-    jekyll-polyglot (1.5.1)
-      jekyll (>= 3.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
     jekyll-seo-tag (2.8.0)
@@ -96,7 +94,6 @@ PLATFORMS
 DEPENDENCIES
   bundler (>= 2.3.5)
   jekyll-github-metadata (>= 2.15)
-  jekyll-polyglot
   jekyll-sitemap
   just-the-docs!
   webrick (~> 1.7)
