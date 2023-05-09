@@ -4,6 +4,7 @@ title: Basic RCE 02
 parent: CodeEngn
 grand_parent: Reversing
 nav_order: 1
+lang: ko
 ---
 
 # Basic RCE 02
