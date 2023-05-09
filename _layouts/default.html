@@ -13,12 +13,11 @@ layout: table_wrappers
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         {% if page.layout == "default" %} 
-          {% assign posts=site | where:"lang-ref", page.lang-ref | sort: "lang" %} 
+          {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: "lang" %} 
           {% if posts.size > 1 %}
             <div class="lang-options">
               <em>Read this in a different language:</em>
               <ul>
-                
                 {% for post in posts %}
                 <li>
                   <a
