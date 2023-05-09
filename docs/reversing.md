@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Reversing
 nav_order: 4
 has_children: true
