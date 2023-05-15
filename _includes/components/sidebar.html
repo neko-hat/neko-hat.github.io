@@ -1,8 +1,9 @@
 <style>
 img.neko_hat {
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
 }
 </style>
 
@@ -14,7 +15,10 @@ img.neko_hat {
     </a>
   </div>
   <nav aria-label="Main" id="site-nav" class="site-nav">
-    <img class="neko_hat" src="/assets/images/neko_hat.png" />
+    <div class="side-bar-profile">
+      <img class="neko_hat" src="/assets/images/neko_hat.png" />
+      <span>neko_hat</span>
+    </div>
     {% assign pages_top_size = site.html_pages
           | where_exp:"item", "item.title != nil"
           | where_exp:"item", "item.parent == nil"
