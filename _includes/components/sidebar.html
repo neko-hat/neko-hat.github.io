@@ -11,7 +11,7 @@ img.neko_hat {
   align-items: center;
 }
 
-.side-bar-profile span {
+.side-bar-profile pre {
   margin-left: 10px;
   text-align: center;
   flex-grow: 1;
@@ -28,7 +28,10 @@ img.neko_hat {
   <nav aria-label="Main" id="site-nav" class="site-nav">
     <div class="side-bar-profile">
       <img class="neko_hat" src="/assets/images/neko_hat.png" />
-      <span>neko_hat</span>
+      <pre>
+        neko_hat
+        Reverser & Pwner
+      </pre>
     </div>
     {% assign pages_top_size = site.html_pages
           | where_exp:"item", "item.title != nil"
