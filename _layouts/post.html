@@ -58,8 +58,9 @@ a.language-switcher:active {
           <div class="lang-options">
             <em>Read this in a different language:</em>
             <ul>
+              <div class="language-switcher-container"></div>
               {% for post in posts %}
-              <div class="language-switcher-container">
+              
                 <a
                   href="{{site.base-url}}{{post.url}}"
                   class="language-switcher"
@@ -67,8 +68,9 @@ a.language-switcher:active {
                 >
                 {{post.lang}}
                 </a>
-              </div>
+              
               {% endfor %}
+            </div>
             </ul>
           </div>
         {% endif %}    
