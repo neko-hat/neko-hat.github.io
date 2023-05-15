@@ -10,7 +10,7 @@ layout: default
   background-color: #007bff;
   color: #fff;
 }
-.tag_name {
+.tag_name h2{
   font-size: 24px;
     margin-top: 40px;
     font-weight: bold;
@@ -53,16 +53,26 @@ h2.About {
     color: #c2bfbf;
 }
 
-.about-profile img {
-  margin-right: 10px; /* 이미지 오른쪽 간격 */
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+.about-profile {
+    display: flex;
+    align-items: center; /* 세로 중앙 정렬 */
 }
 
-.about-profile {
-  display: flex;
-  align-items: center; /* 세로 중앙 정렬 */
+.about-profile img {
+    margin-right: 10px; /* 이미지 오른쪽 간격 */
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 가로 중앙 정렬 */
+}
+
+.about-info p {
+    margin: 0; /* 기본 여백 제거 */
 }
 
 </style>
@@ -111,7 +121,9 @@ h2.About {
 <h2 class="About">About</h2>
 <div class="about-profile">
   <img class="neko_hat" src="/assets/images/neko_hat.png" />
-  <p>Reverser & Pwner</p> 
+  <div class="about-info">
+    <p>Reverser & Pwner</p> 
+  </div>
 </div>
 <hr>
 <script src="https://giscus.app/client.js"
