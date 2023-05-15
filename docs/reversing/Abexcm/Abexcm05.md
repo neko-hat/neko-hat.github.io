@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Abexcm05
+tags: [reversing, Study]
 parent: Abexcm
 grand_parent: Reversing
 nav_order: 5

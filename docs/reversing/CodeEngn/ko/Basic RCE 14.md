@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Basic RCE 14
+tags: [reversing, Study]
 parent: CodeEngn
 grand_parent: Reversing
 nav_order: 12
