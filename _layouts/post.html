@@ -27,7 +27,7 @@ layout: default
       {% if page.layout == "post" %} 
       <hr>
         {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: "lang" %} 
-        {% page.lang-ref %}
+        {% posts.lang-ref %}
         {% if posts.size > 1 %}
           <div class="lang-options">
             <em>Read this in a different language:</em>
@@ -48,9 +48,7 @@ layout: default
         {% endif %}    
         <hr> 
       {% endif %}
-    </div>
-  </div>
-</div>
+
 
 {% if page.tags %}
 <hr>
