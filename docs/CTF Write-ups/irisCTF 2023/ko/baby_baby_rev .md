@@ -6,7 +6,7 @@ parent: irisCTF 2023
 grand_parent: CTF Write-ups
 nav_order: 1
 lang: ko
-lang-ref: irisCTF 2023
+lang-ref: irisCTF 2023 - baby_baby_rev
 ---
 
 # baby_baby_rev

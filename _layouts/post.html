@@ -26,8 +26,7 @@ layout: default
     <div class="col-lg-8 col-md-10 mx-auto">
       {% if page.layout == "post" %} 
       <hr>
-        {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: "lang" %} 
-        {{ page.lang-ref }}
+        {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: "lang" %}
         {% if posts.size >= 1 %}
           <div class="lang-options">
             <em>Read this in a different language:</em>

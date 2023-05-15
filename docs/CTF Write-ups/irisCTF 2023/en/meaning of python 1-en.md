@@ -4,7 +4,7 @@ title: meaning of python 1-en
 tags: [reversing]
 nav_order: 2
 lang: en
-lang-ref: irisCTF 2023
+lang-ref: irisCTF 2023 - meaning of python 1
 ---
 
 # meaning of python 1-en
