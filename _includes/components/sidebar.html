@@ -9,17 +9,10 @@ img.neko_hat {
 .side-bar-profile {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.side-bar-profile pre {
-  margin-left: 10px;
-  text-align: center;
-  font-size: 1.2em;
-  font-family: 'Arial', sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  line-height: 1.5em;
-}
 
 </style>
 
@@ -33,8 +26,8 @@ img.neko_hat {
   <nav aria-label="Main" id="site-nav" class="site-nav">
     <div class="side-bar-profile">
       <img class="neko_hat" src="/assets/images/neko_hat.png" />
-      <pre>neko_hat
-        Reverser & Pwner</pre>
+      <p>neko_hat</p>
+      <p>Reverser & Pwner</p>
     </div>
     {% assign pages_top_size = site.html_pages
           | where_exp:"item", "item.title != nil"

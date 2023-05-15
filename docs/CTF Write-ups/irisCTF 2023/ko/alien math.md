@@ -31,7 +31,7 @@ int __cdecl main(int argc, const char **argv, const char **envp)
   }
   puts(&byte_5650D76133B0);
   puts(&byte_5650D7613418);
-  puts(flag);
+  puts(flag); 
   return 0;
 }
 ```
