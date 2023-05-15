@@ -53,27 +53,30 @@ h2.About {
   color: #c2bfbf;
 }
 
+.about-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 수평 정렬 */
+}
+
 .about-profile img {
-  margin-right: 10px; /* 이미지 오른쪽 간격 */
+  margin-right: 10px;
   width: 70px;
   height: 70px;
   border-radius: 50%;
 }
 
-.about-profile {
+.profile-info {
   display: flex;
-  align-items: center; /* 세로 중앙 정렬 */
+  align-items: center;
 }
 
-.about-profile .profile-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.profile-info p:first-child {
+  margin-right: 10px; /* p 태그들 간격 조정 */
 }
 
-.about-profile .profile-info p {
-  margin: 0;
-  text-align: right;
+.profile-info p:last-child {
+  font-style: italic;
 }
 
 
