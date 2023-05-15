@@ -11,12 +11,10 @@ layout: default
   color: #fff;
 }
 .tag_name {
-  display: inline-block;
-  padding: 4px 8px;
-  border-radius: 20px;
-  border: 1px solid #8d8c8c;
-  background-color: #858585;
-  color: #f4f0f0;
+  font-size: 24px;
+    margin-top: 40px;
+    font-weight: bold;
+    color: #c2bfbf;
 }
 
 .language-switcher-container {
@@ -100,7 +98,7 @@ h2.About {
 {% if page.tags %}
 <hr>
 <div class="tag_name">
-    <span>TAG : </span>
+    <h2>TAG</h2>
 {% for tag in page.tags %}
   <span class="tag">{{ tag }}</span>
 {% endfor %}
