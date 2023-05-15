@@ -29,11 +29,7 @@ int __cdecl main(int argc, const char **argv, const char **envp)
   const char *v5; // r12
   size_t v10; // rax
   size_t v11; // rdi
-  unsigned __int64 v12; // rcx{% if page.tags %}
-  {% for tag in page.tags %}
-    <span class="tag">{{ tag }}</span>
-  {% endfor %}
-{% endif %}
+  unsigned __int64 v12; // rcx
   const char *v13; // rsi
   __int64 v14; // rax
   unsigned __int64 v15; // rdx
