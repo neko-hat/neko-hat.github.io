@@ -19,7 +19,7 @@ layout: default
   font-weight: bold;
   color: #c2bfbf;
   margin-right: 10px;
-  margin-top: 0%;
+  margin-top: 5px;
 }
 
 .tag {
@@ -42,15 +42,14 @@ layout: default
 .lang-options {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: auto;
 }
 
-.diffrent_lang h2 {
-  font-size: 8px;
+.diffrent_lang h3 {
   font-weight: bold;
   color: #c2bfbf;
-  margin-right: 10px;
-  margin-top: 0;
+  padding: 4px 0px;
+  margin-top: auto;
 }
 
 .language-switcher-container {
@@ -73,6 +72,7 @@ a.language-switcher {
   width: 50px;
   height: 50px;
   line-height: 1;
+  padding: 4px 8px;
 }
 
 a.language-switcher:hover {
@@ -134,7 +134,7 @@ a.language-switcher:active {
         {% if posts.size > 1 %}
         <div class="lang-options">
           <div class="diffrent_lang">
-            <h2>Read this in a different language:</h2>
+            <h3>Read this in a different language:</h3>
           </div>
           <div class="language-switcher-container">
             {% for post in posts %}
