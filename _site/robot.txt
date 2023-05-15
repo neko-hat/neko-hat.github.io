@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Stiemap: https://neko-hat.github.io/sitemap.xml
