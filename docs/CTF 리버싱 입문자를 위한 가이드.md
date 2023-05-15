@@ -3,6 +3,8 @@ layout: post
 title: CTF 리버싱 입문자를 위한 가이드
 tags: [reversing, Study, Guide]
 nav_order: 3
+lang: ko
+lang-ref: CTF reversing guide book
 ---
 
 # CTF 리버싱 입문자를 위한 가이드
