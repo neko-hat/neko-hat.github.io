@@ -11,18 +11,19 @@ layout: default
   color: #fff;
 }
 .tag_name {
-  display: inline-block;
+    display: inline-block;
   padding: 4px 8px;
-  border: 1px solid #ccc;
-  background-color: #f7f7f7;
-  color: #333;
+  border-radius: 20px;
+  border: 1px solid #8d8c8c;
+  background-color: #858585;
+  color: #8f8e8e;
 }
 
 </style>
 
 {% if page.tags %}
-<div>
-    <span class="tag_name">TAG : </span>
+<div class="tag_name">
+    <span>TAG : </span>
 {% for tag in page.tags %}
   <span class="tag">{{ tag }}</span>
 {% endfor %}
