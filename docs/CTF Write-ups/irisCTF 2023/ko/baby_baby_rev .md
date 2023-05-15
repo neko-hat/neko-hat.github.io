@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: baby_baby_rev
 tags: [reversing]
 parent: irisCTF 2023

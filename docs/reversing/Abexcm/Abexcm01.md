@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Abexcm01
 parent: Abexcm
 grand_parent: Reversing

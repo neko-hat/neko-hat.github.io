@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: CTF Write-ups
 nav_order: 2
 has_children: true

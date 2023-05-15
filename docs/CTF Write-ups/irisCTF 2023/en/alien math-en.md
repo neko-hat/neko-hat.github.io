@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: alien math-en
 parent: irisCTF 2023
 tags: [reversing]

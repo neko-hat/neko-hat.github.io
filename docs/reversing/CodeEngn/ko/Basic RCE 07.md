@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Basic RCE 07
 parent: CodeEngn
 grand_parent: Reversing

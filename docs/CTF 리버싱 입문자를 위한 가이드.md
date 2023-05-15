@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: CTF 리버싱 입문자를 위한 가이드
 nav_order: 3
 ---

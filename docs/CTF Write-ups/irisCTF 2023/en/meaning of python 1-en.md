@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: meaning of python 1-en
 tags: [reversing]
 parent: irisCTF 2023
