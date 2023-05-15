@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Cyber Apocalypse 2023 - The Cursed Mission
 nav_order: 3
 has_children: true

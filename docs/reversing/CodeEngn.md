@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: CodeEngn
 nav_order: 1
 has_children: true

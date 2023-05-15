@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: SECCON 2022
 nav_order: 2
 has_children: true
