@@ -25,9 +25,9 @@ layout: default
   <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
       {% if page.layout == "post" %} 
+      <hr>
         {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: "lang" %} 
         {% if posts.size > 1 %}
-        <hr>
           <div class="lang-options">
             <em>Read this in a different language:</em>
             <ul>
@@ -44,8 +44,8 @@ layout: default
               {% endfor %}
             </ul>
           </div>
-          <hr>
-        {% endif %}      
+        {% endif %}    
+        <hr> 
       {% endif %}
     </div>
   </div>
