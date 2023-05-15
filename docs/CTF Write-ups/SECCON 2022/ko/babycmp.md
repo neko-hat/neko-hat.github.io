@@ -11,13 +11,13 @@ lang-ref: SECCON 2022
 
 # babycmp
 
-![image](/assets/images/SECCON2022/babaycmp/babycmp.png)
+![image](/assets/images/SECCON2022/babycmp/babycmp.png)
 
 문제가 baby 파일이다. 해당 파일에 대한 정보는 없기 때문에 ‘file’ 명령어를 통하여 해당 파일의 정보를 살펴보았다.
 
 ELF 64-bit file, 리눅스 실행파일이다. 해당 프로그램을 실행했다.
 
-![image](/assets/images/SECCON2022/babaycmp/babycmp1.png)
+![image](/assets/images/SECCON2022/babycmp/babycmp1.png)
 
 이 정보로 알 수 있는 것은 해당 프로그램에 인자로 FLAG 값을 입력하면 해당 FLAG가 맞는지 검증해준다는 것이다. 
 
@@ -218,7 +218,7 @@ v21 = _mm_load_si128((const __m128i *)&xmmword_555555557150);
 v22 = 3672641;
 ```
 
-![image](/assets/images/SECCON2022/babaycmp/babycmp2.png)
+![image](/assets/images/SECCON2022/babycmp/babycmp2.png)
 
 ```c
 
@@ -226,13 +226,13 @@ v22 = 3672641;
 
 위의 정보로는 초기화 상태를 알기 힘들어 디버깅을 진행하였다. IDA에서 디버깅 진행을 위해 gdbserver를 가동시켜보자.
 
-![image](/assets/images/SECCON2022/babaycmp/babycmp3.png)
+![image](/assets/images/SECCON2022/babycmp/babycmp3.png)
 
-![image](/assets/images/SECCON2022/babaycmp/babycmp4.png)
+![image](/assets/images/SECCON2022/babycmp/babycmp4.png)
 
-![image](/assets/images/SECCON2022/babaycmp/babycmp5.png)
+![image](/assets/images/SECCON2022/babycmp/babycmp5.png)
 
-![image](/assets/images/SECCON2022/babaycmp/babycmp6.png)
+![image](/assets/images/SECCON2022/babycmp/babycmp6.png)
 
 다음의 값을 확인 할 수 있다. v18은 이후 v19와 합쳐져 (union) 아래와 같이 초기화 된다.
 
@@ -287,6 +287,6 @@ int main()
 }
 ```
 
-![image](/assets/images/SECCON2022/babaycmp/babycmp7.png)
+![image](/assets/images/SECCON2022/babycmp/babycmp7.png)
 
 FLAG: SECCON{y0u_f0und_7h3_baby_flag_YaY}
