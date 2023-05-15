@@ -1,9 +1,7 @@
 ---
 layout: post
 title: alien math-en
-parent: irisCTF 2023
 tags: [reversing]
-grand_parent: CTF Write-ups
 nav_order: 4
 lang: en
 lang-ref: irisCTF 2023

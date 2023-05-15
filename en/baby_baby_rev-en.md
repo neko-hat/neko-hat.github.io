@@ -2,8 +2,6 @@
 layout: post
 title: baby_baby_rev-en
 tags: [reversing]
-parent: irisCTF 2023
-grand_parent: CTF Write-ups
 nav_order: 1
 lang: en
 lang-ref: irisCTF 2023
