@@ -120,6 +120,6 @@ p.sendline(payload)
 print(p.recv())F
 ```
 
-![Untitled](Find-Flag_jp%2081df61de7b584246895c2c9251e6ffea/Untitled.png)
+![image](/assets/images/SECCON2022/Find-Flag/find-flag.png)
 
 FLAG: SECCON{exit_1n_Pyth0n_d0es_n0t_c4ll_exit_sysc4ll}
