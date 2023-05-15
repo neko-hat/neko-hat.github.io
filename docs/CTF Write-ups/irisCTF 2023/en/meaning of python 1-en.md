@@ -2,6 +2,8 @@
 layout: post
 title: meaning of python 1-en
 tags: [reversing]
+parent: irisCTF 2023
+grand_parent: CTF Write-ups
 nav_order: 2
 lang: en
 lang-ref: irisCTF 2023 - meaning of python 1

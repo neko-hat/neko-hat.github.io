@@ -7,21 +7,6 @@ layout: table_wrappers
 <html lang="{{ site.lang | default: 'ko' }}">
 {% include head.html %}
 <body>  
-  <div class="lang-options">
-    <ul>
-      {% for post in posts %}
-        <li>
-          <a
-            href="{{site.base-url}}{{post.url}}"
-            class="{{post.lang}}"
-            title="View in {{post.lang}}"
-          >
-            {{post.lang}} 
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
   <a class="skip-to-main" href="#main-content">Skip to main content</a>
   {% include icons/icons.html %}
   {% include components/sidebar.html %}
