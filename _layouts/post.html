@@ -2,10 +2,23 @@
 layout: default
 ---
 
+<style>
+.tag {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 20px;
+  background-color: #007bff;
+  color: #fff;
+}
+</style>
+
 {% if page.tags %}
+<div>
+    <span>TAG : </span>
 {% for tag in page.tags %}
   <span class="tag">{{ tag }}</span>
 {% endfor %}
+</div>
 {% endif %}
 
 
