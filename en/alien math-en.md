@@ -4,7 +4,7 @@ title: alien math-en
 tags: [reversing]
 nav_order: 4
 lang: en
-lang-ref: irisCTF 2023
+lang-ref: irisCTF 2023 - alien math
 ---
 
 # alien math-en
