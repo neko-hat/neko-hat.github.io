@@ -5,6 +5,8 @@ tags: [reversing, Study]
 parent: CodeEngn
 grand_parent: Reversing
 nav_order: 6
+lang: ko
+lang-ref: CodeEngn - Basic RCE 08
 ---
 
 # Basic RCE 08

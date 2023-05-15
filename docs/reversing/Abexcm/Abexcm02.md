@@ -5,6 +5,8 @@ tags: [reversing, Study]
 parent: Abexcm
 grand_parent: Reversing
 nav_order: 2
+lang: ko
+lang-ref: Abexcm02
 ---
 
 # Abexcm2

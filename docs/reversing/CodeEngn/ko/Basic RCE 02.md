@@ -6,6 +6,7 @@ parent: CodeEngn
 grand_parent: Reversing
 nav_order: 1
 lang: ko
+lang-ref: CodeEngn - Basic RCE 02
 ---
 
 # Basic RCE 02

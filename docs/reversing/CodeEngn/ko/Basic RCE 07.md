@@ -5,13 +5,15 @@ tags: [reversing, Study]
 parent: CodeEngn
 grand_parent: Reversing
 nav_order: 5
+lang: ko
+lang-ref: CodeEngn - Basic RCE 07
 ---
 
 # Basic RCE 07
 
 ![image](/assets/images/CodeEngn/Basic RCE 07/Basic RCE 07.png)
 
-문제를 해결하기 위해, 다음과 같이 디버거에서 실행해 보았다.(해당 문제 분석과 풀이는 → [Abexcm05]())
+문제를 해결하기 위해, 다음과 같이 디버거에서 실행해 보았다.(해당 문제 분석과 풀이는 → [Abexcm05](/docs/reversing/Abexcm/Abexcm05.md)
 
 ![image](/assets/images/CodeEngn/Basic RCE 07/Basic RCE 071.png)
 
