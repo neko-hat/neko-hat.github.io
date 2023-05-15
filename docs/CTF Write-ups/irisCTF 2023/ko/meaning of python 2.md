@@ -1,6 +1,7 @@
 ---
 layout: default
 title: meaning of python 2
+tags: [reversing]
 parent: irisCTF 2023
 grand_parent: CTF Write-ups
 nav_order: 3
