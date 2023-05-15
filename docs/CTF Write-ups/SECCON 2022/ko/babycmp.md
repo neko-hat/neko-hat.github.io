@@ -6,7 +6,7 @@ tags: [reversing]
 grand_parent: CTF Write-ups
 nav_order: 1
 lang: ko
-lang-ref: SECCON 2022
+lang-ref: SECCON 2022 - babycmp
 ---
 
 # babycmp
