@@ -10,7 +10,7 @@ lang-ref: SECCON 2022 - babycmp
 hidden: true
 ---
 
-# babycmp_jp
+# babycmp-jp
 
 ![image](/assets/images/SECCON2022/babycmp/babycmp.png)
 

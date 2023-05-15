@@ -10,7 +10,7 @@ lang-ref: SECCON 2022 - find - flag
 hidden: true
 ---
 
-# Find-Flag_jp
+# Find-Flag-jp
 
 ```python
 #server.py

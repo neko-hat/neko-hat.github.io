@@ -1,6 +1,6 @@
 ---
 layout: post
-title: babycmp
+title: babycmp-en
 parent: SECCON 2022
 tags: [reversing]
 grand_parent: CTF Write-ups
@@ -10,15 +10,15 @@ lang-ref: SECCON 2022 - babycmp
 hidden: true
 ---
 
-# babycmp_en
+# babycmp-en
 
-![Untitled](babycmp_en%207f874efefaac4c7ca9f96a2eb72b34f8/Untitled.png)
+![image](/assets/images/SECCON2022/babycmp/babycmp.png)
 
 The problem is the baby file. There is no information about the file, so we checked the information about the file through the 'file' command.
 
 It’s ELF64-bit file, Linux executable. Let’s run the applicable program.
 
-![Untitled](babycmp_en%207f874efefaac4c7ca9f96a2eb72b34f8/Untitled%201.png)
+![image](/assets/images/SECCON2022/babycmp/babycmp1.png)
 
 The information shows that if you enter the FLAG value as a factor in the program, it will verify that the FLAG is correct. 
 
@@ -215,7 +215,7 @@ v21 = _mm_load_si128((const __m128i *)&xmmword_555555557150);
 v22 = 3672641;
 ```
 
-![Untitled](babycmp_en%207f874efefaac4c7ca9f96a2eb72b34f8/Untitled%202.png)
+![image](/assets/images/SECCON2022/babycmp/babycmp2.png)
 
 ```c
 
@@ -223,13 +223,13 @@ v22 = 3672641;
 
 Debugging progresses because the initialization state is difficult to understand in the above information. Try running gdbserver for debugging progress on IDA.
 
-![Untitled](babycmp_en%207f874efefaac4c7ca9f96a2eb72b34f8/Untitled%203.png)
+![image](/assets/images/SECCON2022/babycmp/babycmp3.png)
 
-![Untitled](babycmp_en%207f874efefaac4c7ca9f96a2eb72b34f8/Untitled%204.png)
+![image](/assets/images/SECCON2022/babycmp/babycmp4.png)
 
-![Untitled](babycmp_en%207f874efefaac4c7ca9f96a2eb72b34f8/Untitled%205.png)
+![image](/assets/images/SECCON2022/babycmp/babycmp5.png)
 
-![Untitled](babycmp_en%207f874efefaac4c7ca9f96a2eb72b34f8/Untitled%206.png)
+![image](/assets/images/SECCON2022/babycmp/babycmp6.png)
 
 The following values can be seen: Afterwards, v18 is initialized in combination with v19. (union)
 
@@ -284,6 +284,6 @@ int main()
 }
 ```
 
-![Untitled](babycmp_en%207f874efefaac4c7ca9f96a2eb72b34f8/Untitled%207.png)
+![image](/assets/images/SECCON2022/babycmp/babycmp7.png)
 
 FLAG: SECCON{y0u_f0und_7h3_baby_flag_YaY}
