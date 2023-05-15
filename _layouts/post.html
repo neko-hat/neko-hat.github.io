@@ -3,19 +3,42 @@ layout: default
 ---
 
 <style>
+.tag_container {
+  display: flex;
+  justify-content: space-between; /* 수평 정렬 */
+  align-items: center; /* 수직 정렬 */
+}
+
+.tag_name {
+  display: flex;
+  align-items: center;
+}
+
+.tag_container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #c2bfbf;
+  margin-right: 10px;
+  margin-top: 0%;
+}
+
 .tag {
   display: inline-block;
   padding: 4px 8px;
   border-radius: 20px;
   background-color: #007bff;
   color: #fff;
+  margin-left: 5px; /* tag 간격 조정 */
 }
-.tag_name h2 {
-  font-size: 24px;
-    margin-top: 40px;
-    font-weight: bold;
-    color: #c2bfbf;
+
+.tag:first-child {
+  margin-left: 0;
 }
+
+.tag:last-child {
+  margin-right: 0;
+}
+
 
 .language-switcher-container {
   display: flex;
@@ -46,9 +69,15 @@ a.language-switcher:active {
   background-color: #333;
 }
 
-h2.About {
+.profiles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about_h2_container h2 {
   font-size: 24px;
-  margin-top: 40px;
+  margin-top: 0%;
   font-weight: bold;
   color: #c2bfbf;
 }
@@ -56,7 +85,6 @@ h2.About {
 .about-profile {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* 수평 정렬 */
 }
 
 .about-profile img {
@@ -69,16 +97,17 @@ h2.About {
 .profile-info {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
 }
 
 .profile-info p:first-child {
-  margin-right: 10px; /* p 태그들 간격 조정 */
+  margin-right: 10px;
 }
 
 .profile-info p:last-child {
   font-style: italic;
 }
-
 
 </style>
 
@@ -112,25 +141,32 @@ h2.About {
 
 {% if page.tags %}
 <hr>
-<div class="tag_name">
-    <h2>TAG</h2>
-{% for tag in page.tags %}
-  <span class="tag">{{ tag }}</span>
-{% endfor %}
+<div class="tag_container">
+  <div class="aline_tag">
+  <h2>TAG</h2>
 </div>
+  <div class="tag_name">
+  {% for tag in page.tags %}
+    <span class="tag">{{ tag }}</span>
+  {% endfor %}
+  </div>
+  </div>
 <hr>
 {% endif %}
 
 {{ content }}
 <hr>
-<h2 class="About">About</h2>
-<div class="about-profile">
-  <img class="neko_hat" src="/assets/images/neko_hat.png" />
-  <div class="profile-info">
-    <p>neko_hat</p>
-    <p>Reverser & Pwner</p>
-  </div>
+<div class="profiles">
+  <div class="about_h2_container">
+  <h2>About</h2>
 </div>
+  <div class="about-profile">
+    <img class="neko_hat" src="/assets/images/neko_hat.png" />
+    <div class="profile-info">
+      <p>Reverser & Pwner</p>
+    </div>
+  </div>
+  </div>
 <hr>
 <script src="https://giscus.app/client.js"
         data-repo="neko-hat/neko-hat.github.io"
