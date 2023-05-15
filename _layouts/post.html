@@ -47,6 +47,29 @@ a.language-switcher:hover {
 a.language-switcher:active {
   background-color: #333;
 }
+
+span.About {
+        text-decoration: underline;
+        color: #f00;
+}
+
+img.neko_hat {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+.about-profile {
+  display: flex;
+  align-items: center;
+}
+
+.about span {
+  margin-left: 10px;
+  text-align: center;
+  flex-grow: 1;
+}
 </style>
 
 <div class="container">
@@ -89,7 +112,14 @@ a.language-switcher:active {
 {% endif %}
 
 {{ content }}
-
+<hr>
+<span class="About">About</span>
+<br>
+<div class="about-profile">
+  <img class="neko_hat" src="/assets/images/neko_hat.png" />
+  <span>neko_hat</span>
+  <span>Reverser & Pwner</span>
+</div>
 <hr>
 <script src="https://utteranc.es/client.js"
         repo="neko-hat/neko-hat.github.io"
