@@ -17,7 +17,7 @@ title: neko_hat's blog
 description: A Jekyll theme for documentation
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://neko-hat.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-repository: neko-hat/blog # for github-metadata
+repository: neko-hat/neko-hat.github.io # for github-metadata
 
 permalink: pretty
 
