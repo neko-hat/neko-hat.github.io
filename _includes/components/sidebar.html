@@ -18,6 +18,7 @@
       <ul class="nav-list">
         {%- for node in site.nav_external_links -%}
         {% if node.hidden != true %}
+        {{ node.hidden }}
           <li class="nav-list-item external">
             <a href="{{ node.url | absolute_url }}" class="nav-list-link external">
               {{ node.title }}
