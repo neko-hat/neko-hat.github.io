@@ -2,8 +2,10 @@
 {% include toc_heading_custom.html %}
 <ul>
   {% for child in include.toc_list %}
+  {% if child.hidden != true %}
     <li>
       <a href="{{ child.url | relative_url }}">{{ child.title }}</a>{% if child.summary %} - {{ child.summary }}{% endif %}
     </li>
+    {% endif %}
   {% endfor %}
 </ul>
