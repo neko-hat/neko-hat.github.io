@@ -39,10 +39,25 @@ layout: default
   margin-right: 0;
 }
 
+.lang-options {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.diffrent_lang h2 {
+  font-size: 8px;
+  font-weight: bold;
+  color: #c2bfbf;
+  margin-right: 10px;
+  margin-top: 0;
+}
 
 .language-switcher-container {
   display: flex;
+  align-items: center;
   gap: 10px;
+  margin-left: auto;
 }
 
 a.language-switcher {
@@ -58,7 +73,6 @@ a.language-switcher {
   width: 50px;
   height: 50px;
   line-height: 1;
-  margin-right: 10px;
 }
 
 a.language-switcher:hover {
@@ -68,6 +82,7 @@ a.language-switcher:hover {
 a.language-switcher:active {
   background-color: #333;
 }
+
 
 .profiles {
   display: flex;
@@ -117,24 +132,19 @@ a.language-switcher:active {
       {% if page.layout == "post" %} 
         {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: "lang" %}
         {% if posts.size > 1 %}
-          <div class="lang-options">
-            <em>Read this in a different language:</em>
-            <ul>
-              <div class="language-switcher-container">
-              {% for post in posts %}
-              
-                <a
-                  href="{{site.base-url}}{{post.url}}"
-                  class="language-switcher"
-                  title="View in {{post.lang}}"
-                >
-                {{post.lang}}
-                </a>
-              
-              {% endfor %}
-            </div>
-            </ul>
+        <div class="lang-options">
+          <div class="diffrent_lang">
+            <h2>Read this in a different language:</h2>
           </div>
+          <div class="language-switcher-container">
+            {% for post in posts %}
+              <a href="{{site.base-url}}{{post.url}}" class="language-switcher" title="View in {{post.lang}}">
+                {{post.lang}}
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+        
         {% endif %}    
       {% endif %}
 
