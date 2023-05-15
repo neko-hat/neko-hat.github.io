@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: alien math
 parent: irisCTF 2023
 grand_parent: CTF Write-ups

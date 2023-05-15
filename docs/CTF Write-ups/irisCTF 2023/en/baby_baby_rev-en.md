@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: baby_baby_rev
 parent: irisCTF 2023
 grand_parent: CTF Write-ups

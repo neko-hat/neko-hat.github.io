@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: meaning of python 1
 parent: irisCTF 2023
 grand_parent: CTF Write-ups
