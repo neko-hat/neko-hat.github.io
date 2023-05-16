@@ -8,6 +8,8 @@ nav_order: 1
 lang: jp
 lang-ref: SECCON 2022 - babycmp
 hidden: true
+nav_exclude: true
+search_exclude: true
 ---
 
 # babycmp-jp
