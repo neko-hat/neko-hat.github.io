@@ -8,7 +8,7 @@ has_children: true
 # POSTS
 
 <ul>
-  {% for post in site.just_the_docs.collections %}
+  {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
