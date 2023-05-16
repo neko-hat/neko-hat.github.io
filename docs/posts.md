@@ -13,9 +13,11 @@ post_viewer: true
   {% if post.hidden != true %}
   {% if post.post_viewer != true %}
   {% if post.nav_exclude != true %}
+  {% if post.hs_child != true %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
+  {% endif %}
     {% endif %}
     {% endif %}
     {% endif %}
