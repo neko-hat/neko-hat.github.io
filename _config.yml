@@ -18,7 +18,8 @@ description: A Jekyll theme for documentation
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://neko-hat.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: neko-hat/neko-hat.github.io # for github-metadata
-posts: docs/
+posts:
+   - docs/
 
 permalink: pretty
 
@@ -47,6 +48,8 @@ exclude:
    - CODE_OF_CONDUCT.md
    - docker-compose.yml
    - Dockerfile
+   - run.sh
+   - _site
  # theme test code
    - fixtures/
 
