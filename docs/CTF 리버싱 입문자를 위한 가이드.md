@@ -429,7 +429,7 @@ r2 -w <filename> # write 모드 (주로 patch할 때 사용)
 | px size @addr | addr부터 size만큼 hexdump 출력. |
 | fs | flagspace를 보여줌. |
 | axt addr | addr에 담긴 문자열의 참조를 찾는다. |
-| axt  @@ str.(str_sym_name) | 플래그 지정으로 문자열 참조를 찾는다. |
+| axt  @@ str.(str_sym_name) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 플래그 지정으로 문자열 참조를 찾는다. |
 | izzq | 모든 문자열 출력 (~와 연계하여 검색 가능) |
 | db | Break Point 확인 |
 | db function(addr) | funciton (addr)에 Break Point 세팅 |
