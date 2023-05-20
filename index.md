@@ -12,8 +12,8 @@ has_toc: false
 <style>
     .profile {
         border-radius: 50%;
-        width: 70%;
-        height: 70%;
+        width: 50%;
+        height: 50%;
     }
 </style>
 
