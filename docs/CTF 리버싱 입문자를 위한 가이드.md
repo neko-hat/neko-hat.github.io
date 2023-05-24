@@ -414,7 +414,7 @@ r2 -w <filename> # write 모드 (주로 patch할 때 사용)
 
 | Command | Detail |
 | --- | --- |
-| aa(analy경ze all) | 바이너리 분석 실행 |
+| aa(analyze all) | 바이너리 분석 실행 |
 | aaa | aa + aar, aac 명령어의 일괄 실행 |
 | aac(Analyze Function Call) | 함수 호출 분석 |
 | aar | Analyze len bytes of instructions for references |
