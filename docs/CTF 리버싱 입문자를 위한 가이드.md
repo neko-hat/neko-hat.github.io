@@ -322,8 +322,7 @@ sys_write까지 실행했을 때, welcome 변수의 위치(주소)와 값을 확
 
 ### 메모리 구조
 
-![memory_structure.png](/assets/images/guide-for-reversing-image/memory_structure.png)
-
+<img src="/assets/images/guide-for-reversing-image/memory_structure.png" alt="memory_structure.png" style="width:300px;height:auto;">
 `**[Image - Memory Structure]**`
 
 전반적인 메모리 구조는 위의 사진과 같다.
