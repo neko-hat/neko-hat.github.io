@@ -366,7 +366,7 @@ int main(void)
 
 ![Untitled](/assets/images/guide-for-reversing-image/StackFrame-Assembly.png)
 
-`**[Image - disass main]**`
+**`[Image - disass main]`**
 
 ```nasm
 push rbp
