@@ -322,6 +322,99 @@ sys_write까지 실행했을 때, welcome 변수의 위치(주소)와 값을 확
 
 ### 메모리 구조
 
+![memory_structure.png](/assets/images/guide-for-reversing-image/memory_structure.png)
+
+`**[Image - Memory Structure]**`
+
+전반적인 메모리 구조는 위의 사진과 같다.
+
+상위 주소에는 Code 영역 Data 영역 Heap 영역 순으로 메모리가 구성되며, 상위 주소에는 Stack 영역이 있다.
+
+이 중 중요하게 봐야 할 영역은 `Stack 영역`이다.
+
+**Stack Frame**
+
+![stack_frame.png](/assets/images/guide-for-reversing-image/stack_frame.png)
+
+`**[Image - Stack Frame]**`
+
+기본적인 stack frame 구조는 위와 같다.
+
+기본적으로 함수 하나당 stack frame은 `Parameter, RET, Local Variables`로 구성되어 있으며, 함수가 호출 될 때마다, 해당 frame이 쌓이고, 함수가 종료되면, 해당 stack frame이 정리된다.
+
+### **Assembly로 보는 Stack Frame**
+
+**함수 프롤로그**
+
+우선 아래의 코드를 컴파일 한 후 살펴보자.
+
+```c
+//gcc -o StackFrame StackFrame.c
+
+#include <stdio.h>
+
+int main(void)
+{
+    char buf[0x10];
+    scanf("%16s", buf);
+    printf("%s", buf);
+
+    return 0;
+}
+```
+
+0x10바이트의 `buf`에 입력값을 저장하고, `buf`를 출력하는 간단한 코드다. `gdb`에서 `disassebly` 코드를 살펴보자,
+
+![Untitled](/assets/images/guide-for-reversing-image/StackFrame-Assembly.png)
+
+`**[Image - disass main]**`
+
+```nasm
+push rbp
+mov rpb, rsp
+```
+
+위의 두 코드를 `Function Prolog(함수 프롤로그)`라고 한다.
+
+함수가 시작하면서, 본래의 `base pointer`값인 `rbp`를 push하고, `rbp`에 `rsp`값을 저장한다.
+
+함수 호출 전의 기존 base를 stack에 저장하고, 이후 `sub rsp, 0x10`명령을 통해, `Local Variables`공간을 만들기 위한 과정인 것이다.
+
+이 과정을 **`Function Prolog`**라고 한다.
+
+![Function_Prolog.png](/assets/images/guide-for-reversing-image/Function_Prolog.png)
+
+`**[Image - Function Prolog]**`
+
+**함수 에필로그**
+
+```nasm
+leave
+ret
+```
+
+결론부터 말하자면, 위의 두 코드가 `함수의 에필로그(Function Epilog)`이다.
+
+함수의 에필로그에서는, 함수 종료를 위해 `스택을 정리`하며, 함수가 호출된 곳으로 돌아간다(`ret`)
+
+`leave`명령어는 다음의 의미를 가진다.
+
+```nasm
+mov rsp, rbp
+pop rbp
+```
+
+`ret`명령어는 다음의 의미를 가진다.
+
+```nasm
+pop rip
+jmp rip
+```
+
+![Function_Epillog.png](/assets/images/guide-for-reversing-image/Function_Epillog.png)
+`**[image - Function Epilog]**`
+
+
 ### 함수 호출 규약
 
 # 챕터 2. 리버싱 찍먹하기
@@ -418,7 +511,7 @@ r2 -w <filename> # write 모드 (주로 patch할 때 사용)
 | aaa | aa + aar, aac 명령어의 일괄 실행 |
 | aac(Analyze Function Call) | 함수 호출 분석 |
 | aar | Analyze len bytes of instructions for references |
-| aaaa | aaa보다 시간이 오래걸림, aaa에서 안잡히는 것이 잡힌다 생각하면 편하다. |
+| aaaa v| aaa보다 시간이 오래걸림, aaa에서 안잡히는 것이 잡힌다 생각하면 편하다. |
 | afl | r2가 분석한 symbol, label 출력 |
 | ~ | opcode 뒤에 붙으며, linux의 grep처럼 사용 가능하다. |
 | afn name1 name2 | name2의 함수 이름을 name1으로 변경 |
