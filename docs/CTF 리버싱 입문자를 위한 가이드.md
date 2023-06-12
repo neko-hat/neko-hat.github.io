@@ -336,7 +336,7 @@ sys_write까지 실행했을 때, welcome 변수의 위치(주소)와 값을 확
 
 ![stack_frame.png](/assets/images/guide-for-reversing-image/stack_frame.png)
 
-`**[Image - Stack Frame]**`
+**`[Image - Stack Frame]`**
 
 기본적인 stack frame 구조는 위와 같다.
 
@@ -384,7 +384,7 @@ mov rpb, rsp
 
 ![Function_Prolog.png](/assets/images/guide-for-reversing-image/Function_Prolog.png)
 
-`**[Image - Function Prolog]**`
+**`[Image - Function Prolog]`**
 
 **함수 에필로그**
 
@@ -412,7 +412,7 @@ jmp rip
 ```
 
 ![Function_Epillog.png](/assets/images/guide-for-reversing-image/Function_Epillog.png)
-`**[image - Function Epilog]**`
+**`[image - Function Epilog]`**
 
 
 ### 함수 호출 규약
