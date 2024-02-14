@@ -11,7 +11,7 @@ has_toc: false
 # About Me
 <div>
   <div>
-    <img src="assets/images/avatar.png" width="15%" align="left"/>
+    <img src="assets/images/avatar.png" width="25%"/>
   </div>
   <div>
   <ui>
@@ -24,8 +24,6 @@ has_toc: false
     </ui>
   </div>
 </div>
-<br/>
-<br/>
 
 ---
 ### Contact
