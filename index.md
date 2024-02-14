@@ -11,7 +11,7 @@ has_toc: false
 # About Me
 <div>
   <div>
-    <img src="assets/images/avatar.png" width="35%" height="30%" align="left"/>
+    <img src="assets/images/avatar.png" width="15%" align="left"/>
   </div>
   <div>
   <ui>
