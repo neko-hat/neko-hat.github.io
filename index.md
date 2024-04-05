@@ -50,10 +50,14 @@ Open Source Contribute Netatalk (I found discrepancy in buffer size )
 
 ---  
 ## Project
-* (주)프로카젠 LIS 구축 및 서버 관리 (2021.12 ~ 2022.06)  
-* (주)포체인스 Moulus 서비스 개발 및 서버 관리 (2022.06 ~ )  
-* [BoB 12th Project - Synology NAS Vulnerability Analysis, Team TGLS (2023.9 ~ 2023.12)](https://www.synology.com/ko-kr/security/bounty_program/acknowledgement)  
-* Synology SRM Vulnerability Analysis (2024.02 ~)   
+<div>
+  <ui>
+    <li><code style="color : LightSkyBlue">(주)프로카젠 LIS 구축 및 서버 관리 (2021.12 ~ 2022.06)</code></li>
+    <li><code style="color : LightSkyBlue">(주)포체인스 Moulus 서비스 개발 및 서버 관리 (2022.06 ~ )</code></li>
+    <li><code style="color : LightSkyBlue">[BoB 12th Project - Synology NAS Vulnerability Analysis, Team TGLS (2023.9 ~ 2023.12)](https://www.synology.com/ko-kr/security/bounty_program/acknowledgement)  </code></li>
+    <li><code style="color : LightSkyBlue">Synology SRM Vulnerability Analysis (2024.02 ~) </code></li>
+    </ui>
+  </div> 
 
 Update Soon...
 ## CVE
