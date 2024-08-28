@@ -88,7 +88,7 @@ ISA의 이진 명령어들은, 기계어(machine code)라고도 부르며, opcod
 
 대부분의 PC는 현재 Intel사, AMD사의 CPU를 사용한다.
 
-intel사와, AMD사의 CPU는 CISC ISA를 사용하고 있고, ARM Architecture를 사용하는 CPU들은 RISC ISA를 사용하고 있는데, 이를 간단하게 설명하자면, CISC ISA의 특징은 다양하고 복잡하고, 가변적으로 사용할 수 있는 명령어로 이루어져 있다는 것이며(그나마 인간에게 편함), RISC ISA는 일정한 명령어 길이, 메모리(RAM)보다는 Register사용 등의 특징이 있는데, 이 때문에 RISC ISA로 프로그램을 만드는 것은 CISC ISA 보다 힘들었다. (명령어 길이가 제한적), 따라서 프로그래머들은 CISC ISA를 선호하게 되었고, 이에 intel사의 CPU를 사용한 PC의 보급률이 높아졌다.
+intel사와, AMD사의 CPU는 CISC ISA를 사용하고 있고, ARM Architecture를 사용하는 CPU들은 RISC ISA를 사용하고 있는데, 이를 간단하게 설명하자면, CISC ISA의 특징은 다양하고 복잡하고, 가변적으로 사용할 수 있는 명령어로 이루어져 있다는 것이며(그나마 인간에게 편함), RISC ISA는 일정한 명령어 길이, 메모리(RAM)보다는 Register사용 등의 특징이 있는데, 이 때문에 RISC ISA로 프로그램을 만드는 것은 CISC ISA 보다 힘들었다. (명령어 길이가 제한적), 따라서 프로그래머들은 CISC ISA를 선호하게 되었고, 이에 intel사의 CPU를 사용한 PC의 보급률이 높아졌다. (사실 Intel CPU의 점유률이 너무 높아 강제로 Intel을 사용할 수 밖에 없는 것도 컸다.)
 
 intel사의 Architecture인 x86이 처음 나온 프로세서는 8086프로세서(1978년)안데, 그 뒤로부터 해당 Architecture를 차용한 프로세서 시리즈들이, 80으로 시작해서 86으로 끝났기 때문에, 80x86으로 부르게 되었다.
 
