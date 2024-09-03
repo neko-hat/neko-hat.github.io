@@ -549,7 +549,7 @@ r2 -w <filename> # write 모드 (주로 patch할 때 사용)
 </details>
 
 ---
-2024.03 업데이트 예정
+2024.09 업데이트 예정
 
 ## 2-1. C Hello, World PE File로 리버싱 입문하기(Windows)
 
