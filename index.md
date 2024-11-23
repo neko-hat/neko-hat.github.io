@@ -44,7 +44,7 @@ has_toc: false
 ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
 ## Contribute
-<a href="https://github.com/Netatalk/netatalk/commit/3ef2274a0d477fdab63b31bddd3009677409b9c7"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Netatalk_logo.svg/800px-Netatalk_logo.svg.png" width="25%" />
+<a href="https://github.com/Netatalk/netatalk/commit/3ef2274a0d477fdab63b31bddd3009677409b9c7"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Netatalk_logo.svg/800px-Netatalk_logo.svg.png" width="10%" />
 </a>
 
 Open Source Contribute Netatalk (I found discrepancy in buffer size )
