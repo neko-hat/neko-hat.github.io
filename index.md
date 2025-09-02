@@ -1,4 +1,4 @@
-<img width="652" height="646" alt="image" src="https://github.com/user-attachments/assets/dea75fe5-84af-4f50-9949-307339ee8d4d" />---
+---
 layout: default
 title: Home
 nav_order: 1
