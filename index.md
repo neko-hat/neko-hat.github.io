@@ -15,7 +15,7 @@ has_toc: false
   </div>
   <div>
   <ui>
-    <li><code style="color : LightSkyBlue">TeamH4C</code></li>
+    <li><code style="color : LightSkyBlue">TeamH4C(2023.11 ~ 2026.01)</code></li>
     <li><code style="color : LightSkyBlue">Reverser & Pwner</code></li>
     <li><code style="color : LightSkyBlue">Vulnerability Analyzer</code></li>
     <li><code style="color : LightSkyBlue">CAU Industrial Security ISANG 2023 Club Leader</code></li>
