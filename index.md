@@ -58,12 +58,15 @@ Open Source Contribute Netatalk (I found discrepancy in buffer size )
 * NVR/IPC Pentest And Vulnerability Analysis (2024.02.16~2024.04.05, in STEALIEN)
 * IPC Service Pentest And Vulnerability Analysis (2024.08.12~2024.09.06, in STEALIEN)  
 
-Update Soon...
+## Pwn2Own
+* Pwn2Own Automotive 2026 Tokyo (Team ZIEN)  
+
 ## CVE
 
 CVE-2024-4464  
 CVE-2024-53286    
 CVE-2024-50395   
+CVE-2025-59383  
 CVE-2024-53287   
 CVE-2024-53288   
 CVE-2024-53279   
@@ -78,6 +81,10 @@ CVE-2025-44015
 
 ## KVE
 KVE-2025-0160  
+KVE-2025-0801  
+KVE-2025-0907  
+KVE-2025-0912  
+KVE-2025-0935  
 
 ## CTF
 * 2022 SSTF 47th (Team ISANG)
